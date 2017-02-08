@@ -1,19 +1,60 @@
+body {
+  background-image: url(../img/background.gif);
+  color: white;
+}
 h1, h2 {
   text-align: center;
+  font-family: 'Quintessential', cursive;
+}
+
+h1 {
+  font-size: 80px;
+}
+h2 {
+  font-size: 50px;
+}
+h3 {
+  font-size: 40px;
+}
+h4 {
+  font-size: 25px;
+}
+.profiles {
+  display: inline-block;
+  text-align: center;
+  margin-left: .5%
 }
 .column {
   float: left;
-  width: 33%;
+  width: 32.5%;
+  margin-top: 70px;
+  border: 2px solid white;
+  background-color: rgba(255, 255, 255, .1);
 }
 img {
   width: 90%;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  border: 10px solid white;
 }
 .column p{
   margin: 15px;
+  font-size: 20px;
+  font-style: italic;
+  line-height: 1.3em;
+  font-family: sans-serif;
 }
 .column h3, h4 {
   text-align: center;
+}
+
+@media screen and (max-width: 1000px){
+  .column {
+    float: none;;
+    width: 100%;
+  }
+  .column p{
+    margin: 30px;
+  }
 }
